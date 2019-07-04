@@ -1,0 +1,44 @@
+{
+    "name": "liquidsoap",
+    "displayName": "Liquidsoap",
+    "description": "Liquidsoap syntax support for Visual Studio Code",
+    "version": "0.0.1",
+    "publisher": "vittee",
+    "engines": {
+        "vscode": "^1.36.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "keywords": [
+        "liquidsoap",
+        "radio"
+    ],
+    "license": "SEE LICENSE IN LICENSE.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vittee/vscode-liquidsoap.git"
+    },    
+    "contributes": {
+        "languages": [
+            {
+                "id": "liquidsoap",
+                "aliases": [
+                    "Liquidsoap",
+                    "liquidsoap"
+                ],
+                "extensions": [
+                    ".liq"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "liquidsoap",
+                "scopeName": "source.liq",
+                "path": "./syntaxes/liquidsoap.tmLanguage.json"
+            }
+        ]
+    }
+}
